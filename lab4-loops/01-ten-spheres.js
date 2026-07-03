@@ -5,7 +5,22 @@
 
 export function draw() {
     //1️⃣ Translate 900 units to the LEFT
-
+    translate(-900, 0, 0)
+    sphere();
+    translate(200, 0, 0);
+    sphere();
+    translate(200, 0, 0);
+    sphere();
+    translate(200, 0, 0);
+    sphere();
+    translate(200, 0, 0);
+    sphere();
+    translate(200, 0, 0);
+    sphere();
+    translate(200, 0, 0);
+    sphere();
+    translate(200, 0, 0);
+    sphere();
     //2️⃣ Draw a sphere
 
     //3️⃣ Translate 200 units right.

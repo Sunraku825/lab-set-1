@@ -32,6 +32,30 @@ export function draw() {
   //Draw another box
   box();
 
+  translate(0,100,0);
+
+box();
+
+  translate(0,0,100);
+
+  box();
+
+  //Move up (-Y) 100 units
+  translate(0, -100, 0);
+
+  //Draw another box
+  box();
+
+  //Move right (+X) 100 units
+  translate(-100, 0, 0);
+
+  //Draw another box
+  box();
+
+  translate(0,100,0);
+
+  box();
+
   //1️⃣ Move DOWN (+Y) 100 units and draw another box
 
   //2️⃣ Continue on to match the demo

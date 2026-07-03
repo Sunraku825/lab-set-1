@@ -2,46 +2,10 @@
 
 let gravity = vector(0, 9.8, 0);
 
-let balls = [
-    {
-        position: vector(5, -4, 0),
-        velocity: vector(-5, -8, 3.5),
-        red: 255,
-        green: 128,
-        blue: 0
-    },
-    {
-        position: vector(-3, -3, 2),
-        velocity: vector(2, -6, 4.5),
-        red: 255,
-        green: 0,
-        blue: 255
-    },
-    {
-        position: vector(-3, -2, 2),
-        velocity: vector(5, -2, 4.5),
-        red: 0,
-        green: 255,
-        blue: 255
-    },
-    {
-        position: vector(3, -3, 4),
-        velocity: vector(2, -6, 5.5),
-        red: 0,
-        green: 255,
-        blue: 0
-    },
-    {
-        position: vector(-2, -3, -3),
-        velocity: vector(2, -6, 4.5),
-        red: 0,
-        green: 0,
-        blue: 255
-    }
-];
+let balls = [];
 
 export function setup() {
-    let extraBalls = 0;
+    let extraBalls = 100;
     for (let i = 0; i < extraBalls; i++) {
         balls.push({
             position: vector(random(-5, 5), random(-10, 0), random(-5, 5)),
@@ -94,6 +58,6 @@ function bounceBall(ball, dt) {
     push();
     translate(ball.position.x, ball.position.y, ball.position.z);
     fill(ball.red, ball.green, ball.blue);
-    sphere(.3);
+    sphere(random(1,17));
     pop();
 }

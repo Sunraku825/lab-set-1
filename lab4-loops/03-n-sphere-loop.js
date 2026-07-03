@@ -6,19 +6,32 @@
 // -------------------------------------------------------
 
 export function draw() {
-    //This one might be a stretch but we will work together...
+   fill('brown');
+    let x = 0;
+    let count = 100
+    randomSeed(1);
+    translate(100 + (-300), 0, 0);
+    while (x < count) {
+        sphere(random(50,200),);
+        rotateX(random(-180,180));
+        rotateY(random(-180,180));
+        rotateZ(random(-180,180));
+        translate(100, 0, 0);
+          x = x + 1;
+      
+    }
+  
+    
+    for (let t = 0; t < 10; t++) {
+        fill('yellow');
+        sphere(random(50,200));
+        translate(0, -300, 0);
+        rotateZ(random(-180,180));
+        rotateY(random(-180,180));
+        fill('blue');
+        sphere();
 
-    // Take your code from the last activity and copy it here.
-    // Replace the number 10 with a variable named "count".
-    // Now when you change the value of count the number of balls
-    // changes.
 
-    // Having done that can you replace the numbers like -900
-    // with an expression that uses n to keep them centered?
+    }
 
-    // Can you create a different variable named distance
-    // that controls the distance between spheres?
-
-    // Can you change the expressions to keep the spheres even
-    // and centered no matter what the values of count and distance?
 }

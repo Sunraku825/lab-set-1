@@ -2,22 +2,33 @@
 
 let gravity = vector(0, 9.8, 0);
 
-let ballOne = {
-    position: vector(5, -4, 0),
-    velocity: vector(-5, -8, 3.5)
-}
 
-let ballTwo = {
+let balls = [{
+    position: vector(5, -4, 0),
+    velocity: vector(-5, -8, 3.5),
+},
+{
     position: vector(-3, -3, 2),
-    velocity: vector(2, -6, 4.5)
+    velocity: vector(2, -6, 4.5),
+},
+{
+    position: vector(-3, 7, 2),
+    velocity: vector(2, 36, 11),
+},
+{
+    position: vector(-3, 7, -2),
+    velocity: vector(-2, 6, 7),
 }
+];
 
 export function draw(t, dt) {
-    bounceBall(ballOne, dt);
-    bounceBall(ballTwo, dt);
+    for (let ball of balls) {
+        bounceBall(ball, dt);
+
+    }
 }
 
-function bounceBall(ball, dt){
+function bounceBall(ball, dt) {
     //Do the calculus stuff!
     ball.position = ball.position.plus(ball.velocity.times(dt));
     ball.velocity = ball.velocity.plus(gravity.times(dt));

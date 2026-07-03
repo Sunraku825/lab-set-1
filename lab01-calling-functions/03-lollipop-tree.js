@@ -22,6 +22,20 @@
 export function draw() {
 
     //1️⃣ Look up the translate function, and translate UP 50 units
+translate(0,-50,0);
+
+fill('brown');
+
+cylinder(10,100);
+
+translate(0,-90,0);
+
+fill('green');
+
+sphere();
+
+
+
 
     //2️⃣ Draw a cylinder with radius 10 and height 100
 

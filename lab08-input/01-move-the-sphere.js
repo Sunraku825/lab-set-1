@@ -31,4 +31,6 @@ export function draw() {
   translate(x, y, z);
   sphere(.3);
   pop();
+
+  
 }

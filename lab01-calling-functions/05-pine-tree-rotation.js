@@ -21,11 +21,11 @@ export function draw(){
     
     // Should you rotate before this translate❓
   
+
     //Move up
     translate(0, -90, 0);
-
     // Or after the translate❓
-
+rotateX(180);
     //Draw the green cone
     fill(50, 180, 50);
     cone(50,120);

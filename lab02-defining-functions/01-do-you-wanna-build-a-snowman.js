@@ -23,9 +23,33 @@
 export function draw(){
     fill(200);
     translate(0,-50,0);
+    sphere(85);
+    translate(0,-85,0);
+    sphere(65);
+    translate(-15,-10,-40);
+    rotateX(65);
+    fill('brown');
+
+    cylinder(7,220);
+    rotateX(-65);
+    translate(15,10,40);
+    translate(0,-90,0);
+    fill(200)
     sphere(50);
-    translate(0,-100,0);
-    sphere(50);
-    translate(0,-100,0);
-    sphere(50);
+    fill('black');
+    translate(0,-40,0)
+    cylinder(50,15);
+    fill('black');
+    cylinder(20,100);
+    translate(-30,40,0)
+    rotateZ(90)
+    fill('orange');
+    cone(25,90)
+    rotateZ(-90);
+    translate(-7,-17,20);
+    fill('black')
+    sphere(10)
+    translate(0,0,-40);
+    fill('black');
+    sphere(10);
 }

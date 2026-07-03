@@ -6,12 +6,35 @@
 
 let gravity = vector(0, 9.8, 0);
 
-let ball = {
+let ballOne = {
     position: vector(5, -4, 0),
-    velocity: vector(-5, -8, 3.5)
+    velocity: vector(-5, -8, 3.5),
+    red: 0,
+    green: 255,
+    blue: 0,
+}
+let balltwo = {
+    position: vector(6, -4, 3),
+    velocity: vector(-5, 8, 3.5),
+      red: 255,
+    green: 0,
+    blue: 0,
+}
+let ballthree = {
+    position: vector(6, -4, 7),
+    velocity: vector(-5, 13, 3.5),
+      red: 0,
+    green: 0,
+    blue: 255,
+}
+export function draw(t, dt) {
+    ballBounce(ballOne, dt);
+    ballBounce(balltwo, dt);
+    ballBounce(ballthree, dt);
+
 }
 
-export function draw(t, dt) {
+function ballBounce(ball, dt) {
 
     //Do the calculus stuff!
     ball.position = ball.position.plus(ball.velocity.times(dt));
@@ -46,7 +69,7 @@ export function draw(t, dt) {
     //Draw the ball
     push();
     translate(ball.position.x, ball.position.y, ball.position.z);
-    fill(50, 255, 50);
+    fill(ball.red, ball.green, ball.blue);
     sphere(.3);
     pop();
 

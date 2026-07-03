@@ -10,7 +10,7 @@ let position = -4;
 let velocity = 0;
 const gravity = 9.8;
 
-function draw(time, deltaTime) {
+export function draw(time, deltaTime) {
 
 
     translate(0, position, 0);

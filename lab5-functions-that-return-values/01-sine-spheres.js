@@ -16,7 +16,7 @@ export function draw() {
     while (n <= 1000){
 
         push();
-        translate(n, 0, 0);
+        translate(n, Math.sin(n) *200, 0);
         sphere(30);
         pop();
 

@@ -9,11 +9,11 @@ export function draw(time) {
     let n = -1000;
     while (n <= 1000){
         push();
+fill(random(0,225),random(0,225),random(0,225))
+        translate(random(-500,500), Math.tan(n+time) * 200,(random(-500,500)))
 
-        translate(n, Math.sin(n) * 200, 0);
-
-        sphere(30);
+        sphere(random(25,50));
         pop();
-        n = n + 50;
+        n = n + 25;
     }
 }

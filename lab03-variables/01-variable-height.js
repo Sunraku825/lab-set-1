@@ -10,28 +10,27 @@
 // -------------------------------------------------------
 
 export function draw() {
-    tree();
+    tree(75);
     translate(120, 0, 0);   //Translate right to next tree
 
-    tree();
+    tree(120);
     translate(120, 0, 0);   //Translate right to next tree
 
-    tree();
+    tree(155);
 }
 
-function tree() {
+function tree(height) {
     //This is a "variable." It's like in math class where we say "N equals two"
     //and if I ask you "what is three times N?" you say "Six"
-    let height = 150;
 
     //1️⃣ Use the height variable like a number to set the height of your tree.
     //When you change it and save this file the heights of the trees should change!
     //Try heights of 50, 100, 200 and 300 and make sure it works.
     push();
-    translate(0, -50, 0);
+    translate(0, -height/2, 0);
     fill(150, 90, 20);
-    cylinder(10, 100);
-    translate(0, -90, 0);
+    cylinder(10, height);
+    translate(0, -height/2, 0);
     fill(50, 180, 50);
     sphere();
     pop();

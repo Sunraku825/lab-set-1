@@ -13,9 +13,15 @@
 // -------------------------------------------------------
 export function draw(t) {
     fill(200,10,10);
-    translate(0, t, 0);
+    translate(0, -t*30, 0);
 
     //Draw a Red Baloon
     scale(1,1.2,1);
     sphere();
+    translate(0,42,0);
+    rotateX(180);
+    cone(10,25);
+    translate(0,-30,0);
+    fill('white');
+    cylinder(2,195);
 }

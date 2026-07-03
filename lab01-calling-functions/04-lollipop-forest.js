@@ -12,19 +12,78 @@
 //  https://p5js.org/reference/p5/fill/
 //  https://p5js.org/reference/p5/translate/
 //  https://p5js.org/reference/p5/sphere/
-//
+export function draw() {
 // -------------------------------------------------------
-export function draw(){
+ for (let i = 0; i < 8; i++) {
 
+
+
+
+    //1️⃣ Look up the translate function, and translate UP 50 units
+    translate(0,-50, 0);
+
+    fill('brown');
+
+    cylinder(10, 100);
+
+    translate(0, -90, 0);
+
+    fill('green');
+
+    sphere();
+
+    translate(100, 90, 0)
+
+   //Draw the brown trunk
+    translate(0, 0, 0);
+    fill(150, 90, 20);
+    cylinder(10, 100);
     
-    //1️⃣ Copy and paste your 6 lines of tree code from Activity 2. Remove the extra comments...
+    // Should you rotate before this translate❓
+  
 
-    //2️⃣ Translate 120 units Right and 140 down
+    //Move up
+    translate(0, -90, 0);
+    // Or after the translate❓
+rotateX(180);
+    //Draw the green cone
+    fill(50, 180, 50);
+    cone(60,130);
 
-    //3️⃣ Copy and paste your tree code again
+    rotateX(180)
 
-    //4️⃣ Translate 120 units Right and 140 down
+translate(100,90)
 
-    //5️⃣ Copy and paste your tree code again
+    fill('brown');
 
+    cylinder(10, 100);
+
+    translate(0, -90, 0);
+
+    fill('green');
+
+    sphere();
+
+      translate(100, 90, 0)
+
+ 
+
+    fill('brown');
+
+    cylinder(10, 100);
+
+    translate(0, -90, 0);
+
+rotateY(45);
+
+    fill('green');
+
+    sphere();
+
+    translate(0,150,100);
+
+    rotateY(-90);
+
+translate(0,-10);
+ }
 }
