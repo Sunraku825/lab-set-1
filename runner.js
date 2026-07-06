@@ -53,6 +53,7 @@ let last = start;
 async function draw() {
 
   randomSeed(seed);
+  noiseSeed(seed);
   random();
   
   try {
